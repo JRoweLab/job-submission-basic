@@ -59,4 +59,8 @@ To check details-
 qstat -j <jobid>
 ```
 
+## Example
+
+An example job submission ```example_submission.sh``` to estimate gene and isoform level expression against a mouse reference using RSEM of a bulk-RNAseq data has been given. This script parallelizes across 6 samples: -j 6 means process 6 samples concurrently. Here, each RSEM run uses -p 8 threads internally (allocation per job) and quantifies expression with RSEM against the GRCm39 RSEM reference which was built earlier.
+
 
